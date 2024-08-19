@@ -55,5 +55,10 @@
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.4.0",
+    "antd": "^5.20.1",
+    "prop-types": "^15.8.1"
   }
 }

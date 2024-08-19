@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Button } from 'antd';
 import reactLogo from '../assets/react.svg';
 import blockletLogo from '../assets/blocklet.svg';
 import viteLogo from '../assets/vite.svg';
@@ -6,7 +7,6 @@ import './home.css';
 
 function Home() {
   const [count, setCount] = useState(0);
-
   return (
     <>
       <div>
@@ -22,9 +22,9 @@ function Home() {
       </div>
       <h1>Vite + React + Blocklet</h1>
       <div className="card">
-        <button type="button" onClick={() => setCount((currentCount) => currentCount + 1)}>
+        <Button type="primary" onClick={() => setCount((currentCount) => currentCount + 1)}>
           count is {count}
-        </button>
+        </Button>
         <p>
           Edit <code>src/app.jsx</code> and save to test HMR
         </p>
