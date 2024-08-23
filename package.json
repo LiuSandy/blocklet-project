@@ -10,7 +10,7 @@
     "start": "vite --host",
     "clean": "node scripts/build-clean.mjs",
     "bundle": "npm run clean && vite build && blocklet bundle --zip --create-release",
-    "deploy": "npm run bundle && blocklet deploy .blocklet/bundle",
+    "deploy": "npm run bundle && blocklet deploy .blocklet/bundle --app-id zNKZGDAJnS6LGWgz5zPJXgeWpRpMeBxddNjE",
     "upload": "npm run bundle && blocklet upload .blocklet/release/blocklet.json",
     "prepare": "npx simple-git-hooks",
     "bump-version": "zx --quiet scripts/bump-version.mjs"

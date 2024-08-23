@@ -1,11 +1,13 @@
 import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-dom';
 import Profile from './pages/profile';
+import Phone from './pages/phone';
 
 function App() {
   return (
     <div className="app">
       <Routes>
         <Route path="/" element={<Profile />} />
+        <Route path="/phone" element={<Phone />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </div>
